@@ -9,6 +9,7 @@ import org.springframework.context.annotation.FilterType;
         basePackages = "hello.core",
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
+// 브랜치 테스트 office2
 public class AutoAppConfig {
 
 }
