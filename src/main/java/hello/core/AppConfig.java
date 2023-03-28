@@ -38,6 +38,7 @@ public class AppConfig {
     public DiscontPolicy discontPolicy() {
 //        return new FixDiscontPolicy();
         System.out.println("call AppConfig.discontPolicy");
+        System.out.println("develop branch");
         return new RateDiscontPolicy();
     }
 }
