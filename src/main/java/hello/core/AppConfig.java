@@ -43,6 +43,7 @@ public class AppConfig {
         System.out.println("master2");
 
         System.out.println("test");
+        System.out.println("test3");
         return new RateDiscontPolicy();
     }
 }
