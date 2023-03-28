@@ -38,6 +38,11 @@ public class AppConfig {
     public DiscontPolicy discontPolicy() {
 //        return new FixDiscontPolicy();
         System.out.println("call AppConfig.discontPolicy");
+        System.out.println("master");
+        System.out.println("hotfix");
+        System.out.println("master2");
+
+        System.out.println("test");
         return new RateDiscontPolicy();
     }
 }
