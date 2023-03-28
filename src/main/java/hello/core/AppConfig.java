@@ -40,6 +40,7 @@ public class AppConfig {
         System.out.println("call AppConfig.discontPolicy");
         System.out.println("branche test hotfix");
         System.out.println("re test");
+        System.out.println("rerere");
         return new RateDiscontPolicy();
     }
 }
