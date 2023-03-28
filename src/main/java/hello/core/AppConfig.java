@@ -39,6 +39,7 @@ public class AppConfig {
 //        return new FixDiscontPolicy();
         System.out.println("call AppConfig.discontPolicy");
         System.out.println("master1111");
+        System.out.println("hahahahah");
         return new RateDiscontPolicy();
     }
 }
