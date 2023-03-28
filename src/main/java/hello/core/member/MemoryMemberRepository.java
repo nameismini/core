@@ -8,6 +8,7 @@ import java.util.Map;
 @Component
 public class MemoryMemberRepository implements MemberRepository{
 
+    // branche test
     private static Map<Long, Member> store = new HashMap<>();
 
     @Override
