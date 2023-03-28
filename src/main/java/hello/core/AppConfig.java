@@ -25,8 +25,6 @@ public class AppConfig {
     @Bean
     public MemberRepository memberRepository() {
         System.out.println("call AppConfig.memberRepository");
-        System.out.println("branche test hotfix");
-        System.out.println("re test");
         return new MemoryMemberRepository();
     }
 
