@@ -21,6 +21,7 @@ public class AppConfig {
         return new MemberServiceImpl(memberRepository());
     }
 
+    //master last commit
     @Bean
     public MemberRepository memberRepository() {
         System.out.println("call AppConfig.memberRepository");
