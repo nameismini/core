@@ -41,6 +41,7 @@ public class AppConfig {
         System.out.println("develop branch");
         System.out.println("Tag Test");
         System.out.println("hot!");
+        System.out.println("Fetch");
         return new RateDiscontPolicy();
     }
 }
