@@ -39,6 +39,7 @@ public class AppConfig {
 //        return new FixDiscontPolicy();
         System.out.println("call AppConfig.discontPolicy");
         System.out.println("develop branch");
+        System.out.println("Tag Test");
         return new RateDiscontPolicy();
     }
 }
