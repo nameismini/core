@@ -13,6 +13,7 @@ public class MemberServiceImpl implements MemberService{
 
     @Autowired // ac.getBean(MemberRepository memberRepository)
     public MemberServiceImpl(MemberRepository memberRepository) {
+//        System.out.println("MemberServiceImpl 생성자 = "+memberRepository);
         this.memberRepository = memberRepository;
     }
 
