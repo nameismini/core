@@ -2,6 +2,7 @@ package essence.c11;
 
 //import java.util.ArrayList;
 //import java.util.List;
+
 import java.util.*;
 
 public class IteratorEx2 {
@@ -17,15 +18,23 @@ public class IteratorEx2 {
 
         ListIterator it = original.listIterator();
 
-        while(it.hasNext()){
-            System.out.println(it.next());
+        while (it.hasNext()) {
+            copy1.add(it.next());
+        }
+        System.out.println("copy1 : " + copy1);
+        System.out.println("original에서 copy1로 복사");
+        System.out.println("original : " + original);
+
+
+        it = original.listIterator();
+
+        while (it.hasNext()) {
+            copy2.add(it.next());
         }
 
-/*        for (Object o : original) {
-            System.out.println("o = " + o);
-        }*/
-
-        System.out.println(original.toString());
+        System.out.println("original에서 copy2로 복사");
+        System.out.println("original : " + original);
+        System.out.println("copy2 : " + copy2);
 
     }
 }
