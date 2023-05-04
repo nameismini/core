@@ -10,6 +10,7 @@ public class IteratorEx1 {
         list.add(1);
         list.add(2);
         list.add(30);
+        System.out.println("office remote test");
 
         Iterator it = list.iterator();
 
