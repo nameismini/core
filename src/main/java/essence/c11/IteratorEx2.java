@@ -3,6 +3,7 @@ package essence.c11;
 //import java.util.ArrayList;
 //import java.util.List;
 
+import java.nio.charset.Charset;
 import java.util.*;
 
 public class IteratorEx2 {
@@ -30,11 +31,14 @@ public class IteratorEx2 {
 
         while (it.hasNext()) {
             copy2.add(it.next());
+            it.remove();
         }
 
         System.out.println("original에서 copy2로 복사");
         System.out.println("original : " + original);
         System.out.println("copy2 : " + copy2);
+
+        System.out.println(Charset.defaultCharset().displayName());
 
     }
 }

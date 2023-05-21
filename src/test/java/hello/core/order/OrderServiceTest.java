@@ -1,10 +1,9 @@
 package hello.core.order;
 
 import hello.core.AppConfig;
-import hello.core.member.Grade;
-import hello.core.member.Member;
-import hello.core.member.MemberService;
-import hello.core.member.MemberServiceImpl;
+import hello.core.discont.DiscontPolicy;
+import hello.core.discont.RateDiscontPolicy;
+import hello.core.member.*;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,9 +32,13 @@ public class OrderServiceTest {
     }
 
     @Test
-    void fieldEnjectionTest(){
-//        OrderServiceImpl orderService = new OrderServiceImpl();
-//        orderService.createOrder(1L, "member1", 1000);
+    void fieldEnjectionTest() {
+
+        OrderServiceImpl orderService = new OrderServiceImpl();
+        orderService.setMemberRepository(new MemoryMemberRepository());
+        orderService.setDiscontPolicy(new RateDiscontPolicy());
+
+        Order order = orderService.createOrder(1L, "member1", 1000);
     }
 
 }

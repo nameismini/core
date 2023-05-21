@@ -43,6 +43,7 @@ public class AppConfig {
         System.out.println("Tag Test");
         System.out.println("hot!");
         System.out.println("Fetch");
-        return new RateDiscontPolicy();
+//        return new RateDiscontPolicy();
+        return new FixDiscontPolicy();
     }
 }

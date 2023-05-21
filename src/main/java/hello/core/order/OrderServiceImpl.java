@@ -27,17 +27,22 @@ public class OrderServiceImpl implements OrderService {
         this.discontPolicy = discontPolicy;
     }
 
+    @Autowired
+    public void init(MemberRepository memberRepository, DiscontPolicy discontPolicy) {
+        this.memberRepository = memberRepository;
+        this.discontPolicy = discontPolicy;
+    }
+
 //    @Autowired
     public void setMemberRepository(MemberRepository memberRepository) {
         System.out.println("memberRepository = " + memberRepository);
         this.memberRepository = memberRepository;
     }
-/*
     public OrderServiceImpl(){
 
-    }*/
+    }
 
-    //    @Autowired
+    @Autowired
     // Autowired 가 없어도 @Component 붙은 class에 생성자가 하나일때는 자동으로 생성된다
     public OrderServiceImpl(MemberRepository memberRepository, DiscontPolicy discontPolicy) {
         System.out.println("memberRepository 생성자 : " + memberRepository);
