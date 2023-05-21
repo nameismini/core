@@ -2,7 +2,9 @@ package hello.core.discont;
 
 import hello.core.member.Grade;
 import hello.core.member.Member;
+import org.springframework.stereotype.Component;
 
+//@Component
 public class FixDiscontPolicy implements DiscontPolicy {
     private int discontFixAmount = 1000;
 
